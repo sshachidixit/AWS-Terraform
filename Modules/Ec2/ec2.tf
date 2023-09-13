@@ -13,3 +13,7 @@ resource "aws_instance" "ec2" {
       Name =var.ec2name
     }
 }
+
+output "ec2id" {
+  value = aws_instance.ec2.id
+}

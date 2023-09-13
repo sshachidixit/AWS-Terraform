@@ -7,3 +7,7 @@ module "ec2module" {
     ec2name = "ec2modulename"
   
 }
+
+output "ec2output" {
+  value = module.ec2module.ec2id
+}
